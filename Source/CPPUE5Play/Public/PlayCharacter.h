@@ -38,6 +38,9 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
     TObjectPtr<UInputAction> PrimaryFireAction;
 
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+    TObjectPtr<UInputAction> JumpAction;
+
     /** MappingContext */
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
     TObjectPtr<UInputMappingContext> DefaultMappingContext;

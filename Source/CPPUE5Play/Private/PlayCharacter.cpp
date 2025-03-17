@@ -73,6 +73,10 @@ void APlayCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
         //Fire
         EnhancedInputComponent->BindAction(PrimaryFireAction, ETriggerEvent::Triggered, this, &APlayCharacter::PrimaryFire);
+
+        
+        EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &APlayCharacter::Jump);
+        
         
     }
 }
